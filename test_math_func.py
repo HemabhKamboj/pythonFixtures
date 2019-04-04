@@ -10,14 +10,18 @@ def db():
     print('----------teardown----------------')
     db.close()
 
-def test_scott_data(db):
-    scott_data = db.get_data('Hemabh')
-    assert scott_data['id'] == 1
-    assert scott_data['name'] == 'Hemabh'
-    assert scott_data['result'] == 'pass'
+def test_hemabh_data(db):
+    hemabh_data = db.get_data('Hemabh')
+    assert hemabh_data['id'] == 1
+    assert hemabh_data['name'] == 'Hemabh'
+    assert hemabh_data['result'] == 'pass'
+    assert hemabh_data['branch'] == 'IT'
 
-def test_mark_data(db):
-    mark_data = db.get_data('Dhruv')
-    assert mark_data['id'] == 2
-    assert mark_data['name'] == 'Dhruv'
-    assert mark_data['result'] == 'fail'
+def test_dhruv_data(db):
+    dhruv_data = db.get_data('Dhruv')
+    assert dhruv_data['id'] == 2
+    assert dhruv_data['name'] == 'Dhruv'
+    assert dhruv_data['result'] == 'fail'
+    assert dhruv_data['branch'] == 'CSE'
+
+

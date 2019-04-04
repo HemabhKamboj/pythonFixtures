@@ -3,12 +3,14 @@
         {
             "id": 1,
             "name": "Hemabh",
-            "result": "pass"
+            "result": "pass",
+            "branch": "IT"
         },
         {
             "id": 2,
             "name": "Dhruv",
-            "result": "fail"
+            "result": "fail", 
+            "branch": "CSE"
         }
     ]
 }
