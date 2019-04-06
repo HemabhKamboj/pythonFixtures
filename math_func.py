@@ -13,7 +13,9 @@ class StudentDB:
     def get_data(self, name):
         for student in self.__data['students']:
             if student['name'] == name:
-                return student
+                return student           
 
     def close(self):
         pass
+
+       

@@ -1,6 +1,7 @@
 from math_func import StudentDB
 import pytest
 
+
 @pytest.fixture(scope='module')
 def db():
     print('----------setup----------------')
@@ -23,5 +24,10 @@ def test_dhruv_data(db):
     assert dhruv_data['name'] == 'Dhruv'
     assert dhruv_data['result'] == 'fail'
     assert dhruv_data['branch'] == 'CSE'
+
+
+
+
+
 
 
